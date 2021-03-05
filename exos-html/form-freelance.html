@@ -1,0 +1,29 @@
+<form>
+  <label for="name">Prénom et nom*</label><br>
+  <input id="name" name="name" type="text" required /><br>
+  <label for="mail">Adresse e-mail*</label><br>
+  <input id="mail" name="mail" type="email" required /><br>
+  <label for="profile">Votre profil*</label><br>
+  <input id="profile" name="profile" type="text" list="profile-list" required /><br>
+  <label for="budget">Votre budget*</label>
+  <select id="budget" name="budget">
+    <option value="1k">1k</option>
+    <option value="2k">2k</option>
+    <option value="5k" selected>5k</option>
+    <option value="10k">10k</option>
+    <option value="10k+">10k+</option>
+  </select><br>
+  <label for="deadline">Deadline pour le projet</label><br>
+  <input id="deadline" name="deadline" type="date" value="dd/mm/yyyy" /><br>
+  <label for="details">Quelques détails sur le projet</label><br>
+  <textarea id="details" name="details" rows="6" cols="50" placeholder="Voici quelques précisions"></textarea><br>
+  <button type="submit">Envoyer</button>
+</form>
+
+<datalist id="profile-list">
+  <option value="Agence Web" />
+  <option value="Entreprise" />
+  <option value="Association" />
+  <option value="Non Profit" />
+  <option value="Ami" />
+</datalist>

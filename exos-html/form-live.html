@@ -1,0 +1,62 @@
+<form>
+  <fieldset>
+    <legend>Données personnelles</legend>
+    <label for="name">Votre nom*</label><br>
+    <input id="name" name="name" type="text" placeholder="Doe" required /><br>
+    <label for="surname">Votre prénom*</label><br>
+    <input id="surname" name="surname" type="text" placeholder="John" required /><br>
+    <label for="age">Votre tranche d'âge</label><br>
+    <input id="age" name="age" type="number" min="20" max="130" value="20" step="10" /><br>
+    <label for="mail">Votre adresse mail</label><br>
+    <input id="mail" name="mail" type="email" placeholder="johndoe@mail.com" /><br>
+    <label for="postal">Votre code postal</label><br>
+    <input id="postal" name="postal" type="text" pattern="\d{5}" /><br>
+  </fieldset><br>
+  <fieldset>
+    <legend>Expérience web</legend>
+    <label for="html">HTML</label><br>
+    <input id="html" name="html" type="range" value="20" min="0" max="100" step="20" /><br>
+    <label for="css">CSS</label><br>
+    <input id="css" name="css" type="range" value="20" min="0" max="100" step="20" /><br>
+    <label for="javascript">JavaScript</label><br>
+    <input id="javascript" name="javascript" type="range" value="20" min="0" max="100" step="20" /><br>
+    <label for="library">Quelle librairie JavaScript préférez-vous ?</label><br>
+    <input id="library" name="library" type="text" list="library-js" /><br>
+    <label for="github">Lien vers votre dépot GitHub</label><br>
+    <input id="github" name="github" type="url" /><br>
+  </fieldset><br>
+  <fieldset>
+    <legend>Mode de contact (1)</legend>
+    <label for="contact-1">Comment préférez-vous être contacté ?</label><br>
+    <select id="contact-1" name="contact-1">
+      <option value="tel-1">téléphone</option>
+      <option value="mail-1" selected>mail</option>
+      <option value="sms-1">SMS</option>
+    </select><br>
+  </fieldset><br>
+  <fieldset>
+    <legend>Mode de contact (2)</legend>
+    <p>Comment préférez-vous être contacté ?</p>
+    <label for="tel-2">téléphone</label>
+    <input id="tel-2" name="tel-2" type="radio" />
+    <label for="mail-2">mail</label>
+    <input id="mail-2" name="mail-2" type="radio" />
+    <label for="sms-2">SMS</label>
+    <input id="sms-2" name="sms-2" type="radio" />
+  </fieldset><br>
+  <fieldset>
+    <legend>Vos questions</legend>
+    <label for="question">Posez-nous vos questions</label><br>
+    <textarea id="question" name="question" cols="50" rows="6">Bonjour, </textarea><br>
+    <label for="satisfaction">Cochez si cela vous a plu</label>
+    <input id="satisfaction" name="satisfaction" type="checkbox" />
+  </fieldset><br>
+  <button type="submit">Envoyer</button>
+</form>
+
+<datalist id="library-js">
+  <option value="ReactJS" />
+  <option value="VueJS" />
+  <option value="Angular" />
+  <option value="Svelte" />
+</datalist>

@@ -1,0 +1,25 @@
+<form>
+  <fieldset>
+    <legend>Données personnelles</legend>
+    <label for="name">Nom du Monstre*</label>
+    <input id="name" name="name" type="text" placeholder="ex: Blinky the Three-Eyed Fish" required /><br>
+    <label for="birthdate">Sa date de naissance*</label>
+    <input id="birthdate" name="birthdate" type="date" value="25/05/2020" required /><br>
+  </fieldset><br>
+  <fieldset>
+    <legend>Aspect visuel</legend>
+    <label for="color">Couleur</label>
+    <input id="color" name="color" type="color" value="#AD1457" /><br>
+    <label for="eyes">Nombre d'yeux</label>
+    <input id="eyes" name="eyes" type="number" value="1" min="1" max="6" step="1" /><br>
+    <label for="horn">Cornes</label>
+    <input id="horn" name="horn" type="checkbox" checked /><br>
+    <label for="teeth">Dentition</label>
+    <select id="teeth" name="teeth">
+      <option value="square" selected>Formes Carrées</option>
+      <option value="triangular">Formes Triangulaires</option>
+      <option value="rounde">Formes Rondes</option>
+    </select><br>
+  </fieldset><br>
+  <button type="submit">Générer le monstre</button>
+</form>
