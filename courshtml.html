@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Titre de notre page</title>
+</head>
+
+<body>
+  <!-- Ceci est un commentaire -->
+  <p>Paragraphe 1</p>
+  <p>Paragraphe 2</p>
+  <p>Paragraphe 3</p>
+  <p>Paragraphe 4</p>
+
+  <!-- Il existe 6 types de heading -->
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <!-- Les tags sémantiques -->
+  <header>Header</header>
+  <footer>Footer</footer>
+
+  <!-- Pour aller à la ligne on utilise br -->
+  <p>Ceci est un très long paragraphe dans lequel je raconte toute ma vie. <br>Je m'appelle Solène et j'ai 26 ans.</p>
+
+  <!-- Création d'une section -->
+  <section id="section 1">
+    <h1>Section 1</h1>
+    <p>Ceci est un paragraphe</p><br>
+  </section>
+  <section id="section 2">
+    <h1>Section 2</h1>
+    <p>Ceci est un paragraphe</p><br>
+  </section>
+  <section id="section 3">
+    <h1>Section 3</h1>
+    <p>Ceci est un paragraphe</p><br>
+  </section>
+
+  <!-- Les liens : on se sert des attributs -->
+  <a href="http://www.google.com">Le site Google</a>
+  <!-- Ouvrir le lien dans un autre onglet -->
+  <a href="http://www.google.com" target="blank">Le site Google</a>
+  <!-- Renvoi vers une section de la page -->
+  <a href="#section 3">Lien vers la section 3</a>
+
+  <!-- Insérer une image provenant du même dossier -->
+  <img src="image.jpg"><br>
+  <!-- Donner un nom à l'image si elle ne s'affiche pas -->
+  <img src="image.jpg" alt="Mon image"><br>
+  <!-- Chemin relatif au dossier -->
+  <img src="images/image.jpg"><br>
+  <!-- Chemin absolu : pas de dépendance de provenance -->
+  <img src="https://m.media-amazon.com/images/I/61eRCyaZMCL._SS500_.jpg"><br>
+  <!-- Image lien -->
+  <a href="http://www.google.com" alt="Lien vers Google" target="blank">
+    <img src="images/image.jpg">
+  </a><br>
+
+  <!-- Listes -->
+  <h1>TODO liste</h1>
+  <!-- Pour une liste ordonnée -->
+  <ol>
+    <li>Se lever</li>
+    <li>Aller courrir</li>
+    <li>Manger</li>
+  </ol>
+  <!-- Pour une liste non ordonnée (bullet point)-->
+  <ul>
+    <li>Se lever</li>
+    <li>Aller courrir</li>
+    <li>Manger</li>
+  </ul>
+  <!-- On peut aussi faire des imbrications de listes -->
+  <ol>
+    <li>Se lever</li>
+    <li>Faire les courses</li>
+    <ul>
+      <li>Fromage</li>
+      <li>Brocoli</li>
+    </ul>
+  </ol>
+
+  <!-- Un TAG est une balise // Un attribut défini le tag (c'est un avant gout du CSS)-->
+  <p style="font-size:30px">Texte que l'on customise</p>
+  <!-- Plusieurs attibuts se suivent de ";" -->
+  <p style="font-size:30px;color:indianred;background-color:bisque;text-align:center">Texte que l'on customise</p>
+  <!-- Pour mettre en gras une partie TAG -->
+  <p style="color:rebeccapurple">Texte que l'on <strong>customise</strong></p>
+  <!-- Pour mettre en gras une partie ATTRIBUT -->
+  <p style="color:rebeccapurple">Texte que l'on <span style="font-weight:bold">customise</span></p>
+
+  <!-- DIV permet la division du contenu avec des propriétés de largeur et hauteur -->
+  <div style="background-color:aquamarine;width:300px;height:600px">
+    <h2>Mon site</h2>
+  </div>
+  <div style="background-color:aqua;width:300px;height:300px">
+    <a href="http://www.google.com">Le site Google</a>
+  </div>
+  <div style="background-color:antiquewhite;width:600px;height:300px">
+    <ul>
+      <li>TODO 1</li>
+      <li>TODO 2</li>
+    </ul>
+  </div>
+
+  <!-- Les formulaires -->
+  <form>
+    <!-- Champs simple -->
+    <label for="nom">Nom : </label>
+    <input id="nom" type="text" name="nom" placeholder="Veuillez entrer votre nom">
+    <!-- Long texte -->
+    <textarea cols="50" rows="20"></textarea><br>
+    <!-- Chexbox -->
+    <input type="checkbox" value="A">A<br>
+    <input type="checkbox" value="B" checked>B<br>
+    <input type="checkbox" value="C">C<br>
+    <!-- Les radios : une seule selection possible-->
+    <input type="radio" value="Monsieur" name="sexe">Monsieur<br>
+    <input type="radio" value="Madame" name="sexe" checked>Madame<br>
+    <!-- Les listes déroulantes -->
+    <select name="marque">
+      <option value="oysho">OYSHO</option>
+      <option value="etam">ETAM</option>
+      <option value="princesse">PRINCESSE</option>
+      <option value="ysé">YSÉ</option>
+    </select>
+    <!-- Pour soumettre le formulaire et l'envoyer au serveur -->
+    <input type="submit" value="Valider">
+  </form>
+
+  <!-- Le CSS intégré au HTML -->
+  <style>
+    p {
+      font-size: 40px;
+      color: royalblue;
+    }
+  </style>
+  <p>Voici mon texte customisé avec CSS</p>
+
+</body>
+
+</html>
