@@ -1,0 +1,57 @@
+body {
+  font-family: Merriweather, serif;
+  max-width: 50rem;
+  margin: auto;
+  line-height: 1.5;
+}
+
+/* articles "de premier niveau" qui sont impairs
+padding 24px
+background - lavender */
+
+article:nth-child(2n) {
+  padding: 1.5rem;
+  background: lavender;
+}
+
+/* articles "de 2e niveau" (Pirate Ipsum, Cat Ipsum, Coffee Ipsum)
+borer de 2px en couler lavender
+marge basse de 16px
+padding de 12px
+*/
+
+article article {
+  border: 0.125rem solid lavender;
+  margin-bottom: 1rem;
+  padding:0.75rem;
+}
+
+/* 2e article de "de 2e niveau" (Cat Ipsum)
+background lavender
+*/
+
+article article:nth-child(2) {
+  background: lavender;
+}
+
+/* Paragraphe "Partant pour une des ces alternatives..."
+en blanc sur fond noir
+marge interne de 24px */
+
+article:last-child > p:last-child {
+  color: white;
+  background-color: black;
+  padding: 1.5rem;
+}
+
+/* strong dans paragraphe "Partant pour ..."
+color tomato */
+
+p strong {
+  color: tomato;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,78 @@
+/* body centré, 
+largeur maximale de 800px
+police sans-serif de 20px;
+interligne 1.5
+*/
+body {
+  text-align: justify;
+  font-family: sans-serif;
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* titre principal 
+centré de 96px */
+h1 {
+  text-align: center;
+  font-size: 96px;
+}
+
+/* section choice 
+blanc sur le fond #303030, 
+avec une marge interne de 24px */
+.choice {
+  padding: 24px;
+  background-color: #303030;
+  color: white;
+}
+
+/* paragraphe intro "Pliante ou non, ..."
+de 24px
+espacement entre les lettres de 2px */
+.intro {
+  font-size: 24px;
+  font-spacing: 2px;
+}
+
+/* img 
+centrée, 
+avec une bordure de 2px couleur tomato
+une ombre 4px 4px 0 tomato
+marge interne de 10px */
+img {
+border: 2px solid tomato;
+  text-align: center;
+  box-shadow: 4px 4px tomato;
+  padding: 10px
+}
+
+/* section details :
+marge interne de 24px
+bordure et ombre comme image;
+marges top de 24px
+marge bottom de 24px
+*/
+.details {
+  padding: 24px;
+  border: 2px solid tomato;
+  box-shadow: 4px 4px tomato;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+/* élément a 
+avec une marge interne de 16px,
+blanc sur fond tomato,
+pas souligné */
+.button {
+  padding: 16px;
+  color: white;
+  background-color: tomato;
+  text-decoration: none;
+}
+
+/* fond #303030 en survol */
+.button:hover {
+  background-color: #303030;
+}

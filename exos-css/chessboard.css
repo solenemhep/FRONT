@@ -1,0 +1,17 @@
+table {
+  margin: auto;
+  border-spacing: 0;
+  border: 1px solid;
+}
+td {
+  width: 10vmin;
+  height: 10vmin;
+}
+
+/* créer un damier pink et tomato https://assets.codepen.io/4515922/damier.png */
+tr:nth-child(2n+1) td:nth-child(2n+1), tr:nth-child(2n) td:nth-child(2n) {
+  background-color: pink;
+} 
+tr:nth-child(2n) td:nth-child(2n+1), tr:nth-child(2n+1) td:nth-child(2n) {
+  background-color: tomato;
+} 

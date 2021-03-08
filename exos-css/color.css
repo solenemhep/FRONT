@@ -1,0 +1,31 @@
+td,
+th {
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+th {
+  background: hsl(195 53% 79%);
+  border-color: white;
+}
+
+.darker-1 {
+    background: hsl(195 53% 69%);
+  border-color: white;
+}
+
+.darker-2 {
+    background: hsl(195 53% 59%);
+  border-color: white;
+}
+
+.darker-3 {
+    background: hsl(195 53% 49%);
+  border-color: white;
+}
+
+.darker-4 {
+    background: hsl(195 53% 39%);
+  border-color: white;
+}
