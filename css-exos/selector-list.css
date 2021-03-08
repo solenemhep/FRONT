@@ -70,6 +70,6 @@ color tomato
 */
 h2 + p {
   font-weight: bold;
-  font-spacing: 1px;
+  letter-spacing: 1px;
   color: tomato;
 }

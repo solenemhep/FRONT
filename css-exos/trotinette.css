@@ -33,7 +33,7 @@ de 24px
 espacement entre les lettres de 2px */
 .intro {
   font-size: 24px;
-  font-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 /* img 
