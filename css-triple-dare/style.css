@@ -11,6 +11,10 @@
 
 body {
   background: var(--blue);
+  background-image: url(img/blue-splash.png);
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: center top;
   color: #fff;
   font-family: Atma, sans-serif;
   margin: 0;
@@ -33,7 +37,7 @@ button {
 }
 
 nav {
-  background-color: var(--green);
+  background-color: rgba(128, 178, 56, 0.8);
 }
 nav ul {
   display: flex;
@@ -66,8 +70,11 @@ h1, p {
   color: var(--orange);
   text-shadow: 0.1rem 0.1rem 0 white;
 }
+h1 {
+  font-size: 5rem;
+}
 p {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 main {
@@ -107,12 +114,8 @@ h2 {
   border-radius: 10px;
 }
 .obstacles article:hover {
-  background-color: var(--yellow);  
-  transition: 0.5s;
-}
-.obstacles article a:hover {
-  background-color: var(--yellow);  
-  color: var(--orange);
+  background-color: var(--yellow);
+  color: var(--orange);  
   transition: 0.5s;
 }
 .prizes {
@@ -150,6 +153,8 @@ input {
   background-color: var(--orange);
   border-radius: 10px ;
   border: 1px solid rgba(0, 0, 0, 0);
+  width: 640px;
+  display:block;
 }
 button {
   padding: 1rem;
@@ -157,6 +162,7 @@ button {
   text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
   border-radius: 10px ;
   border: 1px solid rgba(0, 0, 0, 0);
+  width: 320px;
 }
 button:hover {
   background-color: var(--green);
@@ -167,6 +173,7 @@ button:hover {
 }
 h3 {
   font-size: 1rem;
+  margin: 0;
 }
 footer {
   background-color: var(--yellow);
@@ -177,7 +184,7 @@ footer {
 
 @media (min-width: 640px) {
   p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .obstacles-group {
     display: flex;
