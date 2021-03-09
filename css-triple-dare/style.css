@@ -1,0 +1,194 @@
+:root {
+  --yellow: #eef13f;
+  --orange: #fe6638;
+  --green: #80b238;
+  --blue: #80c1d6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--blue);
+  color: #fff;
+  font-family: Atma, sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h1 + p,
+button {
+  font-family: Bangers, sans-serif;
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: var(--green);
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-transform: uppercase;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li:nth-child(2n):hover {
+  transform: rotate(-5deg);
+  transition: 0.5s;
+}
+nav ul li:nth-child(2n+1):hover {
+  transform: rotate(5deg);
+  transition: 0.5s;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+h1, p {
+  margin: 0;
+  color: var(--orange);
+  text-shadow: 0.1rem 0.1rem 0 white;
+}
+p {
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  text-align: center;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap img {
+  max-width: 100%;
+  height: auto;
+}
+.obstacles {
+  background-color: var(--orange);
+}
+.obstacles h2 {
+  text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
+}
+.obstacles-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 1rem;
+}
+.obstacles article {
+  background-color: var(--green);
+  border-radius: 10px;
+}
+.obstacles article:hover {
+  background-color: var(--yellow);  
+  transition: 0.5s;
+}
+.obstacles article a:hover {
+  background-color: var(--yellow);  
+  color: var(--orange);
+  transition: 0.5s;
+}
+.prizes {
+  background-color: var(--green);
+}
+.prizes h2 {
+  text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
+}
+.prizes-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 1rem;
+}
+.prizes article {
+  border: 2px dotted rgba(100%, 100%, 100%, 0.3);
+}
+.prizes article img:hover {
+  transform: rotate(180deg);
+}
+article {
+  padding: 1rem;
+}
+.apply h2 {
+  text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input {
+  padding: 1rem;
+  background-color: var(--orange);
+  border-radius: 10px ;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+button {
+  padding: 1rem;
+  background-color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px ;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+button:hover {
+  background-color: var(--green);
+}
+.apply img {
+  max-width: 100%;
+  max-height: auto;
+}
+h3 {
+  font-size: 1rem;
+}
+footer {
+  background-color: var(--yellow);
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  p {
+    font-size: 2rem;
+  }
+  .obstacles-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .prizes-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,37 @@
+body {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  text-align: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+blockquote {
+  margin: auto;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: auto;
+}
+
+.quote-1 {
+  background-image: url(https://picsum.photos/1000/800?image=901);
+}
+.quote-2 {
+  background-image: url(https://picsum.photos/1000/800?image=869);
+}
+.quote-3 {
+  background-image: url(https://picsum.photos/1000/800?image=700);
+}
+.quote-4 {
+  background-image: url(https://picsum.photos/1000/800?image=184);
+}

@@ -1,0 +1,29 @@
+header {
+  min-height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1536122491116-2b1574783c7e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.2);
+}
+li:nth-child(even) {
+  background: rgba(255, 0, 0, 0.2);
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  padding: 1rem;
+}
+
+.item-3 {
+  margin-left: auto;
+}
