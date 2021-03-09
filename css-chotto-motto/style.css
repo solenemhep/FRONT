@@ -17,7 +17,7 @@ La référence de la couleur jaune - #fee500
 /* changer la police pour Changa, laisser le sans-serif comme le 2e choix */
 /* augmente la taille de police au 20px, l'interligne de 1.8 */
 body {
-  font-family: 'Changa One', cursive;
+  font-family: 'Changa', cursive;
   border: 24px solid var(--brand);
   padding: 24px;
   font-size: 20px;
